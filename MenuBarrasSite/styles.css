@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto & display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    background:linear-gradient( rgb(78, 13, 182),rgb(119, 54, 223),rgb(145, 85, 240));
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 50px 0px 100px;
+}
+
+nav .logo{
+    color:aliceblue;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0px 5px;
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: background .5s;
+    letter-spacing: 1px;
+    display: inline-block;
+    border-radius: 9px;
+}
+
+nav ul li a:hover,
+.home{
+    background:linear-gradient( rgba(141, 29, 196, 0.888), rgba(191, 107, 234, 0.888),rgba(201, 147, 229, 0.888));
+}
+
+.menu{
+    display: none;
+}
+
+.btn1{
+    color:white;
+    text-decoration: none;
+    background: linear-gradient(rgba(20, 47, 179, 0.888),rgba(66, 170, 226, 0.888), rgba(118, 157, 212, 0.888));
+    padding: 18px 18px;
+    border: none;
+    border-radius: 20%;
+    font-size: 15px;
+}
+
+nav .btn1:hover{
+    color:white;
+    background-color:  rgb(69, 162, 238);
+}
+
+@media (max-width: 670px) {
+    .menu{
+        /* padding-left: 1px;
+        width: 40px;
+        height: 40px;
+        margin: 10px; */
+        /* position: absolute; */
+        display: block;
+        /* top: 3px; */
+        background: none;
+    }
+
+    .imgmenu{
+        max-width: 40px;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 60px;
+        right: 200%;
+        background:linear-gradient(0deg, rgb(78, 13, 182) 40%,rgb(119, 54, 223) 60%,rgb(145, 85, 240)) 80%;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+    
+    nav ul.open{
+        right: 30%;
+        transition-duration: 0.5s;
+        padding-left: 40%;
+    }
+
+    nav ul li {
+        width: 100%;
+        margin: 50px 0px;
+    }
+    
+    nav ul li a {
+        font-size: 23px;
+        display: flex;
+        width: 50%;
+    }
+    
+    nav ul li a:hover,
+    .home{
+        background-color:none;
+    }
+
+    .home{
+        display: none;
+    }
+
+    .btn1{
+        margin-left: 100%;
+    }
+}
+
+.p1{
+    text-align: center;
+    color:black;
+    padding: 30px 10px;
+    background-color: rgb(240, 240, 241);
+}
+
+.p1 h1{
+    text-decoration: none;
+    margin: 5px;
+    font-size: 40px;
+}
+
+.p1 h2{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.807);
+    padding: 0 20%;
+}
+
+.p1 .imgp1{
+    margin-top: 15px;
+    padding: auto;
+    width: 50%;
+    border-radius: 5px;
+    border-style: double;
+    border-color: rgb(0, 0, 0);
+}
